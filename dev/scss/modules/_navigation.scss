@@ -1,0 +1,100 @@
+// *************************************
+//
+// Navigation
+// -> Reusable navigation module
+//
+// *************************************
+
+.Bot-Nav {
+  background: url(../img/black.png);
+  padding: 15px;
+}
+
+.Navigation {
+  @include clearfix;
+  text-align: center;
+  width: 60%
+}
+
+.buttons {
+  width: 40%;
+  float: left;
+}
+
+// -------------------------------------
+// Module specific variables
+// -------------------------------------
+
+// Module-variableName
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+.Navigation-list {
+	display: block;
+  margin:0;
+}
+
+.Navigation-link.is-active {
+  text-decoration: underline;
+}
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+.Navigation-list--dropdown .Navigation-listItem {
+  background: url(../img/black.png);
+  text-align: left;
+  margin-top: 5px;
+}
+
+
+// ----- List item ----- //
+
+.Navigation-listItem {
+  display: block;
+  margin: 1px rem(12px);
+  float: left;
+  border-right: 1px solid white;
+  padding-right: 20px;
+  color: white;
+  &:first-of-type {
+    margin-left: 0;
+  }
+  &:last-of-type {
+    margin-right: 0;
+    border:0;
+  }
+}
+
+.Navigation-listItem--hasDropdown .Navigation-listItem {
+  width: 300px
+}
+
+// ----- Navigation link ----- //
+
+.Navigation-link {
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+}
+
+.Navigation-link--invertedBold {
+  color: $c-white; 
+  font-weight: bold;
+}
+
+ul .Navigation-list {
+  width: 100%;
+}

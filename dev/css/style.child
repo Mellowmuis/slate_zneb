@@ -1,0 +1,12 @@
+/*
+Theme Name: slate-0.3.1_zneb
+Theme URI: https://github.com/SamTaal/slate_zneb
+Description: a clean slate - zneb child theme
+Version: 0.3.1
+Author: Sam Taal
+Author URI: http://www.lokaalgevonden.nl
+Tags: slate
+Template: slate-0.3.1
+*/
+
+@import url('../slate-0.3.1/style.css');

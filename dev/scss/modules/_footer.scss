@@ -1,0 +1,46 @@
+.Footer {
+}
+
+// RESPONSIVE FOOTER
+.Footer-inner .widget {
+
+}
+
+.Footer-inner {
+}
+
+//style the widgets
+.Footer-inner .widget {
+	float: right;
+}
+
+.Socket {
+	background: black;
+	color: white;
+	a {
+		color: white;
+		text-decoration:underline;
+	}
+
+	h4 {
+		display:inline;
+		font-size: 12px;
+		float: left;
+	}
+
+	.menu-footermenu-container {
+		width: 200px;
+		float: left;
+		margin-left: 5px;
+	}
+
+	p {
+		max-width: 600px;
+		float: left;
+	}
+}
+
+.sitemap {
+float: right;
+}
+
