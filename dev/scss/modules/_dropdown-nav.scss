@@ -9,19 +9,21 @@ ul.Navigation-list--dropdown {
     display: block;
     height: auto;
     position: absolute;
-    width: 100%;
+    width: 200px;
     line-height: 40px;
     z-index: 9999;
-    margin-top: 20px;
+    margin-top: 16px;
+    margin-left: -10px;
+    padding: 10px;
 }
 
 ul.Navigation-list--dropdown li.Navigation-listItem {
     display: block;
-    padding: 0px 5px;
-    margin: 1px auto;
+    padding: 0px 2px;
+    margin: 0px auto;
     border: 0px none;
 }
 
 .Navigation-list.is-hidden {
-	display: none;
+    display: none;
 }

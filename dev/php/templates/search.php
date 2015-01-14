@@ -1,4 +1,28 @@
 <?php get_header(); ?>
+	
+	<?php if (has_post_thumbnail( $post->ID ) ): ?>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+    $image = $image[0]; ?>
+    <?php else :
+    $image = get_bloginfo( 'stylesheet_directory') . ''; ?>
+    <?php endif; ?>
+	
+	<div class="banner" style="background-image: url('<?php echo $image; ?>')">
+        <div class="pattern">
+            <div class="u-gridRow smartlink_wrap">
+                <div class="smartlink">
+                    <a href="/over-ons/">Over ons</a>
+                </div>
+                <div class="smartlink">
+                    <a href="/expertise/">Expertise</a>
+                </div>
+                <div class="smartlink">
+                    <a href="/contact/">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 	<?php if (have_posts()) : ?>
 
@@ -30,6 +54,5 @@
 
 	<?php endif; ?>
 
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

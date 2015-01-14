@@ -46,7 +46,6 @@
 }
 
 .banner {
-  background: url('../img/header.jpg') center;
   background-size: cover;
   height: 800px;
   width: 100%;
@@ -54,8 +53,11 @@
   z-index: 1;
 }
 
-.contraexpertise {
-  background: url('../img/img-contraexpertise.jpg') center;
+.upperbase {
+  background: url(../img/upperbg.png);
+  width: 100%;
+  height: 100%;
+  
 }
 
 .bannerinhoud {
@@ -71,6 +73,26 @@
   color: white;
   font-size: 15px;
   padding: 0
+}
+
+input.search {
+  background: #D01F26;
+  color: white;
+  border:0;
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input.searchsubmit {
+  border:0;
+  background: #D01F26;
+  color: white;
+  background-image:url('../img/search.png');
+  margin-top: 2px;
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
 }
 
 .smartlink {
@@ -98,11 +120,11 @@
 }
 
 .overonsbanner {
-  background: #ff0400;
+  background: #D01F26;
   color: white;
 
   p {
-    margin:30px;
+    margin:20px;
   }
 }
 
@@ -110,15 +132,17 @@
   font-weight: 100;
   letter-spacing: 2px;
   margin:0;
-  margin-top: 30px;
+  margin-top: 20px;
+  font-size: 20px;
 }
 
 .homepage p {
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 1px;
   font-weight: 100;
-  line-height: 34px;
-  margin: 20px 0;
+  line-height: 24px;
+  margin: 10px 0;
+  margin-bottom: 30px;
 }
 
 .zneblogo {
@@ -139,6 +163,7 @@
 .expertisetitel {
   font-weight: 100;
   letter-spacing: 2px;
+  margin: 20px 0;
 }
 
 .expertiseimage {
@@ -155,26 +180,26 @@ height: 120px;
     width: 50%;
     padding: 10px;
     float: left;
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid red;
   }
   .tabmenu-option3 {
     width: 33.333333%;
     padding: 10px;
     float: left;
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid red;
   }
   .tabmenu-option4 {
     width: 25%;
     float: left;
     padding: 10px 0px;
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid red;
   }
 
   .tabmenu-option5 {
     width: 20%;
     padding: 10px;
     float: left;
-    border-bottom: 3px solid #333;
+    border-bottom: 3px solid red;
   }
 
 }
@@ -183,7 +208,9 @@ height: 120px;
   background: #e0e0e0
 }
 
-
+.Content--app {
+  margin: 30px 0;
+}
 
 // -------------------------------------
 // States

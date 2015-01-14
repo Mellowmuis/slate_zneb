@@ -5,20 +5,26 @@ Template Name: App page
 ?>
 
 <?php get_header(); ?>
+	
+	<?php if (has_post_thumbnail( $post->ID ) ): ?>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+    $image = $image[0]; ?>
+    <?php else :
+    $image = get_bloginfo( 'stylesheet_directory') . 'img/img-contraexpertise.jpg'; ?>
+    <?php endif; ?>
 
-	<div class="banner contraexpertise">
-        <div class="pattern">
-        	<div class="bannerinhoud u-gridContainer">
-        		<h2><?php the_title(); ?></h2>
-        		<hr />
-        		<p class="bannerparagraph">
-        			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae sapien vive
-        			rra, rutrum lacus quis, maximus tellus. Suspendisse sit amet massa nulla. Donec et port
-        			a turpis, sed molestie urna. Sed nec mi eu nibh malesuada volutpat. Morbi lacinia mag
-        			na velit, in condimentum risus dapibus nec. 
-        		</p>
-        	</div>
-        </div>
+	<div class="banner" style="background-image: url('<?php echo $image; ?>')">
+            <div class="upperbase">
+            <div class="pattern">
+                <div class="bannerinhoud u-gridContainer">
+                    <h2><?php the_title(); ?></h2>
+                    <hr />
+                    <p class="bannerparagraph">
+                        <?php echo get_post_meta($post->ID, 'paragraph', true); ?> 
+                    </p>
+                </div>
+            </div>
+            </div>
     </div>
 
 	<div>
@@ -30,8 +36,8 @@ Template Name: App page
 				</aside>
 				<article class="Content-article u-gridCol8" id="post-<?php the_ID(); ?>">
 					Bekijk nu ook de informatie van ons bedrijf vanuit de app! De app is beschikbaar in Google Play voor Android apparaten en als webapp voor iOS van Apple telefoons.
-
-					Voor Apple iPhone gebruikers: scan de QR-code of surf naar de website. 
+					<br /><br/>
+					Voor Apple iPhone gebruikers: scan de QR-code of surf naar de website. <br /><br />
 
 					<a href="#">Download de app hier</a>
 

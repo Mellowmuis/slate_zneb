@@ -6,14 +6,21 @@ Template Name: Homepage
 
 <?php get_header(); ?>
 	
-	<div class="banner">
+	<?php if (has_post_thumbnail( $post->ID ) ): ?>
+    <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+    $image = $image[0]; ?>
+    <?php else :
+    $image = get_bloginfo( 'stylesheet_directory') . ''; ?>
+    <?php endif; ?>
+	
+	<div class="banner" style="background-image: url('<?php echo $image; ?>')">
         <div class="pattern">
             <div class="u-gridRow smartlink_wrap">
                 <div class="smartlink">
                     <a href="/over-ons/">Over ons</a>
                 </div>
                 <div class="smartlink">
-                    <a href="/expertise/">Expertise</a>
+                    <a href="/expertise/">Diensten</a>
                 </div>
                 <div class="smartlink">
                     <a href="/contact/">Contact</a>
@@ -27,15 +34,13 @@ Template Name: Homepage
 		<article class="overonsbanner" id="post-<?php the_ID(); ?>">
 			<div class="u-gridContainer">
 				<div class="u-gridRow">
-					<div class="u-gridCol10">
+					<div class="u-gridCol12">
 					<h2>Over ons</h2>
 						<div class="homepage">
 							<?php the_content(); ?>
 						</div>
 					</div>
-					<div class="u-gridCol2">
-						<img class="zneblogo" src="<?php echo get_stylesheet_directory_uri(); ?>/img/zneb.png" />
-					</div>
+
 				</div>
 			</div>
 		</article>

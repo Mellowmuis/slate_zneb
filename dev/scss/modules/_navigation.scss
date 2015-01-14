@@ -7,13 +7,15 @@
 
 .Bot-Nav {
   background: url(../img/black.png);
-  padding: 15px;
+  padding: 5px;
 }
 
 .Navigation {
   @include clearfix;
   text-align: center;
-  width: 60%
+  width: 70%;
+  float: left;
+  padding: 15px;
 }
 
 .buttons {
@@ -21,6 +23,103 @@
   float: left;
 }
 
+.sidenav {
+  width: 30%;
+  float: right;
+  text-align: right;
+  margin-top: 5px;
+
+  #searchform {
+    float: right;
+    margin-top: 6px;
+  }
+}
+
+.sidenav_buttons {
+  float: right;
+  margin-left: 10px;
+}
+
+@media all and (max-width: 500px) {
+    
+    h2 {
+      font-size: 16px;
+    }
+
+    .bannerinhoud {
+      margin-top: 130px;
+      padding: 0px 20px;
+    }
+
+    .tabmenu img {
+      width: 50%;
+      height: 50%;
+    }
+
+    .tabmenu {
+      font-size: 12px;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+}
+
+@media all and (max-width: 1040px) {
+  #searchform {
+    display:none;
+  }
+
+  .sidenav_buttons {
+    float: left;
+  }
+
+  .sidenav {
+    display:none;
+  }
+  .Navigation {
+    width: 100%;
+    padding: 0;
+  }
+
+  .Bot-Nav {
+    max-height: 58px;
+    padding:0;
+  }
+
+  .Navigation-listItem {
+    border:0;
+    margin: 0;
+  }
+
+  .Navigation-list {
+  
+    background: url(../img/black.png);
+    background-color: none;
+  }
+
+  .Navigation-listItem:first-of-type {
+    box-shadow: 0;
+    border: 0;
+  }
+
+  #js-navCollapseTarget {
+    top: 0px !important;
+  }
+
+  .Navigation-listItem:first-of-type{
+
+  }
+
+  .banner {
+    height: 400px;
+  }
+
+  .bannerinhoud {
+    margin-top: 150px;
+    padding: 0px 20px;
+  }
+}
 // -------------------------------------
 // Module specific variables
 // -------------------------------------
@@ -87,7 +186,14 @@
 .Navigation-link {
   text-transform: uppercase;
   color: white;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.Navigation-list--dropdown {
+  .Navigation-link {
+    font-size: 12px;
+    text-transform: none;
+  }
 }
 
 .Navigation-link--invertedBold {
