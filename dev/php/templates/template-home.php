@@ -45,35 +45,59 @@ Template Name: Homepage
 			</div>
 		</article>
 	<?php endwhile; endif; ?>
-	<div class="u-gridContainer">
+	<div class="u-gridContainer expertisecontainer">
 		<h2 class="expertisetitel">Diensten</h2>
 		<div class="u-gridRow expertises">
-			<div class="u-gridCol4">
-				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/brand.svg" /><br/>
-				Brandschade
-			</div>
-			<div class="u-gridCol4">
-				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/storm.svg" /><br/>
-				Storm
-			</div>
-			<div class="u-gridCol4">
-				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/slot.svg" /><br/>
-				Diefstal
-			</div>
+			<a href="/expertise"><div class="u-gridCol3">
+				
+				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon1.png" />
+				<div class="expertiseimagetitel">Expertise</div><br/>
+				
+			</div></a>
+			<a href="/contra-expertise"><div class="u-gridCol3">
+				
+				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon2.png" />
+				<div class="expertiseimagetitel">Contra-expertise</div><br/>
+				
+			</div></a>
+			<a href="/mediation-2"><div class="u-gridCol3">
+				
+				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon3.png" />
+				<div class="expertiseimagetitel">Mediation</div><br/>
+				
+			</div></a>
+			<a href="/voortaxatie-opstallen"><div class="u-gridCol3">
+				
+				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon4.png" />
+				<div class="expertiseimagetitel">Voortaxatie opstal</div><br/>
+				
+			</div></a>
 		</div>
 		<div class="u-gridRow expertises">
-			<div class="u-gridCol4">
-				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/bedrijf.svg" /><br/>
-				Bedrijfschade
-			</div>
-			<div class="u-gridCol4">
-				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/inboedel.svg" /><br/>
-				Inboedel
-			</div>
-			<div class="u-gridCol4">
-				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/boeken.svg" /><br/>
-				Winkelinventarissen
-			</div>
+			<a href="/voortaxatie-inventarissen"> <div class="u-gridCol3">
+				
+				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon5.png" />
+				<div class="expertiseimagetitel">Voortaxatie inventaris</div><br/>
+				
+			</div></a>
+			<a href="/bedrijfseconomische-taxaties"><div class="u-gridCol3">
+				
+				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon6.png" />
+				<div class="expertiseimagetitel">Bedrijfseconomische taxaties</div><br/>
+				
+			</div></a>
+			<a href="/bouwkundige-vooropnames"><div class="u-gridCol3">
+				
+				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon7.png" />
+				<div class="expertiseimagetitel">Bouwkundige vooropname</div><br/>
+				
+			</div></a>
+			<a href="/gebouwtotaal"><div class="u-gridCol3">
+				
+				<img class="expertiseimage" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon8.png" />
+				<div class="expertiseimagetitel">Gebouw totaal</div><br/>
+				
+			</div></a>
 		</div>
 	</div>
 

@@ -63,9 +63,9 @@
 
                 <div class="sidenav">
                     <div class="sidenav_buttons">
-                        <a href="https://www.linkedin.com/company/2477887"><img width="40" src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin.png" /></a>
-                        <a href="mailto:info@zneb.nl"><img width="40" src="<?php echo get_stylesheet_directory_uri(); ?>/img/email.png" /></a>
-                        <a href="tel:0765879355"><img width="40" src="<?php echo get_stylesheet_directory_uri(); ?>/img/telefoon.png" /></a>
+                        <a href="https://www.linkedin.com/company/2477887"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/linkedin.png" /></a>
+                        <a href="mailto:info@zneb.nl"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/email.png" /></a>
+                        <a href="tel:0765879355"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/telefoon.png" /></a>
                     </div>
                     <?php get_search_form(); ?>
                 </div>

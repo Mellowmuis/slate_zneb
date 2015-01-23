@@ -49,8 +49,10 @@
 
 	<?php else : ?>
 
-		<h2>No posts found. Try a different search?</h2>
-		<?php get_search_form(); ?>
+		<div class="u-gridContainer">
+			<h2>Geen resultaten gevonden.</h2>
+			<?php get_search_form(); ?><br/>
+		</div>
 
 	<?php endif; ?>
 

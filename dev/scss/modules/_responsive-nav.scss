@@ -67,7 +67,7 @@
 
 	 .Bot-Nav {
 		height: auto;
-		min-height: 58px;
+		min-height: 52px;
 	 }
 	 #js-navCollapse {
 		display: block;
@@ -176,7 +176,8 @@
 		}
 
 		.telsvg {
-			left: 10px;				
+			left: 10px;	
+			display:none;			
 			.Icon--inline {
 				margin: -4px;
 				margin-top: 5px;
@@ -192,6 +193,7 @@
 		}
 
 		.mailsvg {
+			display:none;
 			left: 100px;				
 			.Icon--inline {
 				margin: -4px;

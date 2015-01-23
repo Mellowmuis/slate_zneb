@@ -1,5 +1,6 @@
 var map;
 var geocoder;
+var iconBase = 'http://zneb.lokaalgevonden.nl/wp-content/themes/slate-0.3.1_zneb/img/contacticon.png';
 
 function initialize() {
   geocoder = new google.maps.Geocoder();
@@ -21,7 +22,8 @@ function codeAddress(address) {
       map.setCenter(results[0].geometry.location);
       var marker = new google.maps.Marker({
         map: map,
-        position: results[0].geometry.location
+        position: results[0].geometry.location,
+        icon: iconBase
       });
     }
   });
