@@ -13,18 +13,31 @@ Template Name: App page
     $image = get_bloginfo( 'stylesheet_directory') . 'img/img-contraexpertise.jpg'; ?>
     <?php endif; ?>
 
-	<div class="banner" style="background-image: url('<?php echo $image; ?>')">
-            <div class="upperbase">
-            <div class="pattern">
-                <div class="bannerinhoud u-gridContainer">
-                    <h2><?php the_title(); ?></h2>
-                    <hr />
-                    <p class="bannerparagraph">
-                        <?php echo get_post_meta($post->ID, 'paragraph', true); ?> 
-                    </p>
-                </div>
+	    <div class="banner-melle"><!-- niet absolute maar relative -->
+        <div class="navigationwrap" > <!-- absolute  top 0 width 100% height 200px-->
+            <?php include_once('nav.php'); ?>
+        </div>
+        <div class="imagewrap">
+            <img class="header-image-block"  src="<?php echo $image; ?>" />
+            <div class="pattern"> <!-- abs 100% / 100% -->
+                   
             </div>
-            </div>
+            <div class="overlayuberwrap" style=""><!-- absolute -->
+                <div class="u-gridContainer" style="position: relative; height: 100%">
+                    <div class="overlaywrap bannerinhoud">
+                        <h2><?php the_title(); ?></h2>
+                        <hr />
+                        <span class="bannerparagraph">
+                            <?php echo get_post_meta($post->ID, 'paragraph', true); ?>  
+                        </span>
+                        <a class="scroll-to-bottom-gray" href="#bottom"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/v.svg"/></a>
+                    </div>
+
+                 </div>
+            </div> 
+        </div>
+      
+       
     </div>
 
 	<div>

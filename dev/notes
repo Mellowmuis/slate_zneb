@@ -1,0 +1,58 @@
+<div class="banner-melle">
+		<img class="header-image-block"  src="<?php echo get_stylesheet_directory_uri(); ?>/img/shutterstock_2.jpg" />
+        <div class="pattern">
+            
+        </div>
+        <div class="u-gridRow smartlink_wrap">
+                <div class="smartlink">
+                    <a href="/over-ons/">Over ons</a>
+                </div>
+                <div class="smartlink">
+                    <a href="/expertise/">Diensten</a>
+                </div>
+                <div class="smartlink">
+                    <a href="/contact/">Contact</a>
+                </div>
+            </div>
+    </div>
+
+
+
+        <?php
+                
+                $args = array(
+                    'post_type' => 'slides', 
+                    'posts_per_page'=>999
+                );
+                $slides = new WP_Query( $args );
+                $num = count($slides);
+                $counter = 0;
+                if( $slides->have_posts() ) {
+                    while( $slides->have_posts() ) {
+                        $slides->the_post(); 
+                        $counter++;
+                        ?>
+                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
+                              $image_url = $image[0];
+                        ?>
+                      
+                        <?php
+                    }
+                }
+            ?>
+
+
+------category--------
+<div class="banner" style="background-image: url('<?php echo $image; ?>')">
+            <div class="upperbase">
+            <div class="pattern">
+                <div class="bannerinhoud u-gridContainer">
+                    <h2><?php the_title(); ?></h2>
+                    <hr />
+                    <p class="bannerparagraph">
+                        <?php echo get_post_meta($post->ID, 'paragraph', true); ?> 
+                    </p>
+                </div>
+            </div>
+            </div>
+    </div>

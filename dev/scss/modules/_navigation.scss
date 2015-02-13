@@ -5,9 +5,17 @@
 //
 // *************************************
 
+
+.navigationwrap {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 9999;
+}
 .Bot-Nav {
-  background: url(../img/black.png);
+  background: rgba(0, 0, 0, 0.7);
   padding: 5px;
+  z-index:999999; 
 }
 
 .Navigation {
@@ -45,11 +53,6 @@
     
     h2 {
       font-size: 16px;
-    }
-
-    .bannerinhoud {
-      margin-top: 160px;
-      padding: 0px 20px;
     }
 
     .tabmenu img {
@@ -116,10 +119,7 @@
     height: 400px;
   }
 
-  .bannerinhoud {
-    margin-top: 180px;
-    padding: 0px 20px;
-  }
+  
 }
 // -------------------------------------
 // Module specific variables
@@ -205,3 +205,10 @@
 ul .Navigation-list {
   width: 100%;
 }
+.sticky {
+  position: fixed; 
+  top: 0; 
+  z-index: 999999999999999999999999;
+  width: 100%;
+  margin-top: 0px !important;
+} 

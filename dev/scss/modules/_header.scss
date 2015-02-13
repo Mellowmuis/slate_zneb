@@ -4,14 +4,18 @@
 // -> Main site header
 //
 // *************************************
-
+.header-abso{
+  position:absolute;
+  z-index: 99999;
+  width:100%;
+}
 .Header {
   background-image: url("../img/img-header-bg.png");
   background-size: cover;
 }
 
 .upper-header {
-  position: fixed;
+  position: relative;
   width: 100%;
   z-index: 100;
 }
@@ -19,7 +23,7 @@
 .logo {
   width: 100%;
   padding: 10px;
-   background: url(../img/white.png);
+   background: url(../img/white.png); 
 }
 // -------------------------------------
 // Module specific variables
