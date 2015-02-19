@@ -37,18 +37,15 @@ Template Name: Homepage
 						<div class="banner-melle">
 							<img class="header-image-block" src="<?php echo $image_url; ?>" >
 							<div class="pattern">
-					            
-					        </div>
-					        
-						        <div class="overlaywrap bannerinhoud">
-			                        <h2><?php the_title(); ?></h2>
-			                        <hr />
-			                        <span class="bannerparagraph">
-			                            <?php the_content(); ?>  
-			                        </span>
-			                        <a class="scroll-to-bottom-gray" href="#bottom"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/v.svg"/></a>
-			                    </div>
-			                
+							</div>
+							<div class="overlaywrap bannerinhoud" href="<?php echo get_field('url'); ?>">
+								<h2><?php the_title(); ?></h2>
+								<hr />
+								<span class="bannerparagraph">
+									<?php the_content(); ?>  
+								</span>
+								<a class="scroll-to-bottom-gray" href="#bottom"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/v.svg"/></a>
+							</div>
 						</div>
 						<?php
 					}

@@ -94,7 +94,7 @@ module.exports = function (grunt) {
           'autoprefixer:compressed',
           //'csslint:compressed',
           // Beautify, lint, concat and minify js
-          'jsbeautifier:js',
+ //         'jsbeautifier:js',
         //  'jshint:strict',
           'concat:all',
           'uglify:all',
@@ -102,7 +102,7 @@ module.exports = function (grunt) {
           'copy:php_child',
           'delete_sync:php_templates',
           'delete_sync:php_includes',
-          'processhtml:compressed',
+    //      'processhtml:compressed',
           // Copy Wp child css
           'copy:css_child',
           // Process images
@@ -121,14 +121,14 @@ module.exports = function (grunt) {
           // Make sure all bower libs are present
           'newer:copy:bower_libs',
           // Beautify, lint and copy js
-          'jsbeautifier:js',
+//          'jsbeautifier:js',
         //  'jshint:strict',
           'newer:copy:js',
           // Process php
           'newer:copy:php_child',
           'delete_sync:php_templates',
           'delete_sync:php_includes',
-          'processhtml:expanded',
+        //  'processhtml:expanded',
           // Copy Wp child css
           'copy:css_child',
           // Process images
