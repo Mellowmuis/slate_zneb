@@ -67,8 +67,11 @@ jQuery(document).ready(function($) {
 			$('.overlayclickbox').remove();
 
 			$('body').prepend('<div class="overlayclickbox" '+hrefcode+' style="cursor: pointer; background-color: none; '+
-					'position: absolute; top: '+t+'px; left: '+l+'px;width: '+w+'px; height: '+h+'px"></div>');
+					'position: absolute; top: '+t+'px; left: '+l+'px;width: '+w+'px; height: '+h+'px" ></div>');
 
+			$('.overlayclickbox').on('click',function(evt){
+				window.open($(this.currentTarget).attr('href'), '_blank');
+			});
 
 		}
 	});
