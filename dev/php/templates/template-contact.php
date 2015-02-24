@@ -11,8 +11,7 @@ Template Name: Contactpage
     $image = $image[0]; ?>
     <?php else :
     $image = get_bloginfo( 'stylesheet_directory') . '/img/img-contraexpertise.jpg'; ?>
-    <?php endif; ?>
-    
+    <?php endif; ?>   
 	    <div class="banner-melle"><!-- niet absolute maar relative -->
         <div class="navigationwrap" > <!-- absolute  top 0 width 100% height 200px-->
             <?php include_once('nav.php'); ?>
@@ -23,12 +22,12 @@ Template Name: Contactpage
                    
             </div> 
             <div class="overlayuberwrap" style=""><!-- absolute -->
-                <div class="u-gridContainer" style="position: relative; height: 100%">
+                <div class="" style="position: relative; height: 100%">
                     <div class="overlaywrap bannerinhoud">
                         <h2><?php the_title(); ?></h2>
                         <hr />
                         <span class="bannerparagraph">
-                            <?php echo get_post_meta($post->ID, 'paragraph', true); ?>  
+                             <?php echo get_post_meta($post->ID, 'banner_titel', true); ?> 
                         </span> 
                         <a class="scroll-to-bottom-gray" href="#bottom"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/v.svg"/></a>
                     </div>

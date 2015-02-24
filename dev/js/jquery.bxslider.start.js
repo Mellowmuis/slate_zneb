@@ -73,7 +73,7 @@ jQuery(document).ready(function($) {
 				window.open($(this.currentTarget).attr('href'), '_blank');
 			});
 
-		}
+		} 
 	});
 });
 

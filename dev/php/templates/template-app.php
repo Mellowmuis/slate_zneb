@@ -23,7 +23,7 @@ Template Name: App page
                    
             </div>
             <div class="overlayuberwrap" style=""><!-- absolute -->
-                <div class="u-gridContainer" style="position: relative; height: 100%">
+                <div class="" style="position: relative; height: 100%">
                     <div class="overlaywrap bannerinhoud">
                         <h2><?php the_title(); ?></h2>
                         <hr />

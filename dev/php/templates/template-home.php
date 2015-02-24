@@ -84,7 +84,7 @@ Template Name: Homepage
 		</article>
 	<?php endwhile; endif; ?>
 	<div class="u-gridContainer expertisecontainer">
-		<h3>Diensten</h3>
+		<h3><a href="/diensten" style="color:black;">Diensten</a></h3>
 		<div class="u-gridRow expertises">
 			<a href="/expertise"><div class="u-gridCol3">
 				
@@ -136,7 +136,9 @@ Template Name: Homepage
 				<div class="expertiseimagetitel">Gebouw totaal</div><br/>
 				
 			</div></a>
+
 		</div>
+		<a href="/diensten" style="font-size:16px; color:black; float:right;">Lees meer></a>
 	</div>
 
 

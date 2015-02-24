@@ -42,7 +42,7 @@ $('.tabs a').click(function(e){
                         <h2><?php the_title(); ?></h2>
                         <hr />
                         <span class="bannerparagraph">
-                            <?php echo get_post_meta($post->ID, 'paragraph', true); ?>  
+                           <?php echo get_post_meta($post->ID, 'banner_titel', true); ?> 
                         </span>
                         <a class="scroll-to-bottom-gray" href="#bottom"><img  src="<?php echo get_stylesheet_directory_uri(); ?>/img/v.svg"/></a>
                     </div>
