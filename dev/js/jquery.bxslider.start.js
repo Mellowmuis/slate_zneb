@@ -70,7 +70,7 @@ jQuery(document).ready(function($) {
 					'position: absolute; top: '+t+'px; left: '+l+'px;width: '+w+'px; height: '+h+'px" ></div>');
 
 			$('.overlayclickbox').on('click',function(evt){
-				window.open($(this.currentTarget).attr('href'), '_blank');
+				window.open($(evt.currentTarget).attr('href'), '_blank');
 			});
 
 		} 
