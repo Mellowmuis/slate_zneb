@@ -60,10 +60,10 @@ $('.tabs a').click(function(e){
 		<div class="wrapper">
         <ul class="tabs clearfix" data-tabgroup="first-tab-group">
           
-          <li><a href="#tab1" class="active"><img class="expertiseimage-con" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon9.png" /><br>WANNEER?</a></li>
-          <li><a href="#tab2"><img class="expertiseimage-con" src="<?php echo get_stylesheet_directory_uri(); ?>/img/why.png" /><br>WAAROM?</a></li>
-          <li><a href="#tab3"><img class="expertiseimage-con" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon10.png" /><br>VOOR WIE?</a></li>
-          <li><a href="#tab4"><img class="expertiseimage-con" src="<?php echo get_stylesheet_directory_uri(); ?>/img/how.png" /><br>HOE?</a></li>
+          <li><a href="#tab1" class="active"><img class="expertiseimage-cont" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon9.png" /><br>WANNEER?</a></li>
+          <li><a href="#tab2"><img class="expertiseimage-cont" src="<?php echo get_stylesheet_directory_uri(); ?>/img/why.png" /><br>WAAROM?</a></li>
+          <li><a href="#tab3"><img class="expertiseimage-cont" src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon10.png" /><br>VOOR WIE?</a></li>
+          <li><a href="#tab4"><img class="expertiseimage-cont" src="<?php echo get_stylesheet_directory_uri(); ?>/img/how.png" /><br>HOE?</a></li>
           
         </ul>
         <section id="first-tab-group" class="tabgroup">

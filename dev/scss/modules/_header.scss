@@ -17,14 +17,29 @@
 .upper-header {
   position: relative;
   width: 100%;
-  z-index: 100;
+  z-index: 100;  
+  background: rgba(255,255,255,0.95);
 }
 
 .logo {
   width: 100%;
   padding: 10px;
   // background: url(../img/white.png); 
-  background: rgba(255,255,255,0.95);
+
+}
+.off-button{
+right:50px;
+top:50px;
+position:absolute;
+background-color:#FF0400;
+border-radius:5px;
+padding:10px;
+color:white;
+  a{
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+  }
 }
 // -------------------------------------
 // Module specific variables

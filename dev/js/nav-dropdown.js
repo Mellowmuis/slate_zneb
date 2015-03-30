@@ -11,36 +11,38 @@
 // -------------------------------------
 
 jQuery(document).ready(function($) {
-
+  var timeoutId;
   // When a dropdown trigger is clicked
-  $('.js-navDropdown').click(function(e) {
-    // If the selected dropdown list is not visible
+  
+  var hideDropdownFunc = function(){
+    $(".Navigation-list--dropdown").addClass('is-hidden');
+  }
+
+  $('.js-navDropdown').hover(function(e) {
+    //if there is a timeout, destroy it.
+    clearTimeout(timeoutId);
+
     if ($(this).siblings('.Navigation-list--dropdown').hasClass('is-hidden')) {
-      // Hide all dropdown lists, except the selected dropdown and its parents
-      $(".Navigation-list--dropdown")
-        .addClass('is-hidden');
-      // Make the selected dropdown visible
-      $(this).siblings('.Navigation-list--dropdown')
-        .removeClass('is-hidden');
-      // Make its parents visible
-      $(this).parents('.Navigation-list--dropdown')
-        .removeClass('is-hidden');
-      // If the selected dropdown is visible
-    } else {
-      // Hide the selected dropdown
-      $(this).siblings('.Navigation-list--dropdown').addClass('is-hidden');
-      // Hide the descendants of the selected dropdown
-      $(this).children('.Navigation-list--dropdown').addClass('is-hidden');
+      $(".Navigation-list--dropdown").addClass('is-hidden');
+      $(this).siblings('.Navigation-list--dropdown').removeClass('is-hidden');
+      $(this).parents('.Navigation-list--dropdown').removeClass('is-hidden');
     }
-  }).click(function(e) {
-    // Prevent screen from jumping when clicking a dropdown trigger
-    e.preventDefault();
+  }, function(e){
+    //set timeout to remove itself
+    timeoutId = setTimeout(hideDropdownFunc, 10);
+
   });
+
+  $('.Navigation-list--dropdown').hover(function(e){
+    clearTimeout(timeoutId);
+  }, function(e){
+    timeoutId = setTimeout(hideDropdownFunc, 10);
+  });
+  
   // Stop clicks on navigation links from bubbling up
   $('.Navigation-link').click(function(e) {
     e.stopPropagation();
   });
-
 });
 
 // -------------------------------------
@@ -48,8 +50,8 @@ jQuery(document).ready(function($) {
 // will hide all dropdowns
 // -------------------------------------
 
-$(document).click(function() {
-
-  $(".Navigation-list--dropdown").addClass('is-hidden');
-
+jQuery(document).click(function() {
+  //$(".Navigation-list--dropdown").addClass('is-hidden');
 });
+
+

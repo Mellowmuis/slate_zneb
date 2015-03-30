@@ -73,8 +73,7 @@ Template Name: Homepage
 				<div class="u-gridRow">
 					<div class="u-gridCol12">
 						<div class="homepage">
-							<p>ZNEB Expertise en Taxatie B.V. zorgt voor inzicht en overzicht van uw situatie en staat u bij in het beheersen en beperken van niet calculeerbare risico’s.
-							Vanuit de overtuiging dat anders zien anders beleven is gaan onze experts middels een open dialoog met respect en vertrouwen voor u aan het werk.
+							<p><?php the_content(); ?> 
 						</p>
 						</div>
 					</div>

@@ -12,10 +12,14 @@ ul.Navigation-list--dropdown {
     width: 200px;
     line-height: 40px;
     z-index: 9999;
-    margin-top: 16px;
-    margin-left: -10px;
+   // margin-top: 16px;
+    margin-left: -20px;
     padding: 10px;
         list-style: circle;
+        .Navigation-list--dropdown{
+            margin-left:200px;
+            margin-top:-50px;
+        }
 }
 
 ul.Navigation-list--dropdown li.Navigation-listItem {

@@ -3,11 +3,18 @@
 	<div class="upper-header">
 
 		<div class="logo">
-			<div> 
+			<div class="u-gridCol"> 
 				<img class="logo-for-large" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" />
 				<img class="logo-for-small" src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo3.png" />
 			</div>
+			<a href="/offerte">
+				<div class="off-button">
+					<a href="/offerte"><div>Offerte aanvragen</div></a>
+				</div>
+			</a>
 		</div>
+		
+
 	</div>            
 	<div class="Bot-Nav">
 		<div>
