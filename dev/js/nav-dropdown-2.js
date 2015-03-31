@@ -9,7 +9,7 @@
 // Toggle .is-hidden class onclick and
 // allow only one open menu at a time
 // -------------------------------------
-
+/*
 jQuery(document).ready(function($) {
 
   // When a dropdown trigger is clicked
@@ -52,4 +52,4 @@ $(document).click(function() {
 
   $(".Navigation-list--dropdown").addClass('is-hidden');
 
-});
+});*/

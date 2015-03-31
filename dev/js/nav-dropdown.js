@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
   $('.js-navDropdown').hover(function(e) {
     //if there is a timeout, destroy it.
     clearTimeout(timeoutId);
-
+	
     if ($(this).siblings('.Navigation-list--dropdown').hasClass('is-hidden')) {
       $(".Navigation-list--dropdown").addClass('is-hidden');
       $(this).siblings('.Navigation-list--dropdown').removeClass('is-hidden');
@@ -29,14 +29,14 @@ jQuery(document).ready(function($) {
     }
   }, function(e){
     //set timeout to remove itself
-    timeoutId = setTimeout(hideDropdownFunc, 10);
+    timeoutId = setTimeout(hideDropdownFunc, 1000);
 
   });
 
   $('.Navigation-list--dropdown').hover(function(e){
     clearTimeout(timeoutId);
-  }, function(e){
-    timeoutId = setTimeout(hideDropdownFunc, 10);
+  }, function(e)
+    timeoutId = setTimeout(hideDropdownFunc, 1000);
   });
   
   // Stop clicks on navigation links from bubbling up
@@ -53,5 +53,6 @@ jQuery(document).ready(function($) {
 jQuery(document).click(function() {
   //$(".Navigation-list--dropdown").addClass('is-hidden');
 });
+
 
 
