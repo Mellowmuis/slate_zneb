@@ -35,7 +35,7 @@ jQuery(document).ready(function($) {
 
   $('.Navigation-list--dropdown').hover(function(e){
     clearTimeout(timeoutId);
-  }, function(e)
+  }, function(e) {
     timeoutId = setTimeout(hideDropdownFunc, 1000);
   });
   
