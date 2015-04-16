@@ -52,7 +52,7 @@ Template Name: App page
 					<br /><br/>
 					Voor Apple iPhone gebruikers: scan de QR-code of surf naar de website. <br /><br />
 
-					<a href="#">Download de app hier</a>
+					<a href="https://play.google.com/store/apps/details?id=com.wZneb">Download de app hier</a>
 
 
 
